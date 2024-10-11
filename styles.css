@@ -1,0 +1,199 @@
+/* Mengatur gaya dasar */
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    background-image: url('citysmart.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: bottom;
+    background-repeat: no-repeat; 
+    position: relative;
+    min-height: 100vh;
+    padding-top: 70px;
+}
+
+#text-span1{
+    color: #E88C20;
+    font-family: 'Gill Sans';
+}
+
+#text-span2{
+    color: #3BD8ED;
+    font-family: 'Gill Sans';
+}
+
+.background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam dengan transparansi */
+    z-index: 0;
+}
+
+/* Konten di atas overlay */
+header, .hero, .about, footer {
+    position: relative;
+    z-index: 1;
+}
+
+.content {
+    text-align: center;
+    padding: 100px;
+    color: white; 
+}
+
+header {
+    background-color: #003366;
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.text-logo {
+    height: 40px;
+    margin-left: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero {
+    color: white;
+    text-align: left;
+    padding: 100px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    color: #ff7300;
+}
+.hero h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.quote-author {
+    font-style: italic;
+    color: #ffcc00;
+    font-size: 1rem;
+}
+
+.cta-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+/* Mengatur posisi dan tampilan CEO section */
+.ceo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan di belakang foto CEO */
+}
+
+.ceo-section img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.ceo-section h3 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+.ceo-section p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.about {
+    background: transparent;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 20px;
+    max-width: 800px;
+    background: transparent;
+    color: #007bff;
+    text-shadow: #f0f0f0;
+}
+
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
