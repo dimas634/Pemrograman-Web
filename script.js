@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let displayValue = ''; // Menyimpan input pengguna
 let operator = '';     // Operator yang dipilih
 let firstValue = '';   // Angka pertama
@@ -115,3 +116,39 @@ window.addEventListener('keydown', function(event) {
         backspace();
     }
 });
+=======
+function addTask() {
+    const taskInput = document.getElementById('taskInput');
+    const taskList = document.getElementById('taskList');
+
+    if (taskInput.value.trim() !== "") {
+        const li = document.createElement('li');
+        li.className = 'task-item';
+
+        const taskText = document.createElement('span');
+        taskText.textContent = taskInput.value;
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Delete';
+        deleteButton.onclick = function () {
+            taskList.removeChild(li);
+        };
+
+        const editButton = document.createElement('button');
+        editButton.textContent = 'Edit';
+        editButton.onclick = function () {
+            const newTask = prompt('Edit your task:', taskText.textContent);
+            if (newTask !== null) {
+                taskText.textContent = newTask;
+            }
+        };
+
+        li.appendChild(taskText);
+        li.appendChild(editButton);
+        li.appendChild(deleteButton);
+        taskList.appendChild(li);
+
+        taskInput.value = "";
+    }
+}
+>>>>>>> aebbd64 (Upload Tugas 2 Modul 2)

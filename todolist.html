@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Medcare</h2>
+        <ul>
+            <li>Dashboard</li>
+            <li>Tasks</li>
+            <li>Calendar</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+
+    <div class="main-panel">
+        <div class="header">
+            <h2>Good Day, User!</h2>
+            <p>Have a Nice Day!</p>
+        </div>
+
+        <div class="task-panel">
+            <h3>My Tasks</h3>
+            <div class="add-task">
+                <input type="text" id="taskInput" placeholder="Add a new task...">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="taskList">
+                <!-- Task items will appear here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
